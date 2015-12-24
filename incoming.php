@@ -2,7 +2,7 @@
 include("includes/app.php");
 
 //insert incoming call to db
-    $queryInsert = "INSERT INTO incoming (caller, json_data) VALUES ('{$from}', '{$json_data}')"
+    $queryInsert = "INSERT INTO incoming (caller, json_data) VALUES ('{$from}', '{$json_data}')";
     $insert = $db->insert($queryInsert);
 
 ?>
