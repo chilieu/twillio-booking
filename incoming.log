@@ -1,0 +1,288 @@
+Digits: 123 - Total: 6
+Digits: 123 - Total: 6
+Digits: 123 - Total: 6
+Array
+(
+    [Digits] => 123
+)
+
+Digits: 123 - Total: 6
+Digits: 123 - Total: 6
+Digits: 123 - Total: 6
+Array
+(
+    [Digits] => 123
+)
+
+Digits: 147 - Total: 12
+Array
+(
+    [msg] => Gather End
+    [Called] => +17147108286
+    [Digits] => 147
+    [ToState] => CA
+    [CallerCountry] => US
+    [Direction] => inbound
+    [CallerState] => CA
+    [ToZip] => 92856
+    [CallSid] => CAcbd159bf0ece8fa92eb92fb3cd7dabf4
+    [To] => +17147108286
+    [CallerZip] => 92841
+    [ToCountry] => US
+    [ApiVersion] => 2010-04-01
+    [CalledZip] => 92856
+    [CalledCity] => ALISO VIEJO
+    [CallStatus] => in-progress
+    [From] => +17149022817
+    [AccountSid] => AC4205285ed733b1bde6fd80b1230f8dfa
+    [CalledCountry] => US
+    [CallerCity] => IRVINE
+    [Caller] => +17149022817
+    [FromCountry] => US
+    [ToCity] => ALISO VIEJO
+    [FromCity] => IRVINE
+    [CalledState] => CA
+    [FromZip] => 92841
+    [FromState] => CA
+)
+
+Digits: 123 - Total: 6
+Digits: 123 - Total: 6
+Digits: 123 - Total: 6
+Array
+(
+    [Digits] => 123
+)
+
+Digits: 123 - Total: 6
+Digits: 123 - Total: 6
+Digits: 123 - Total: 6
+Array
+(
+    [Digits] => 123
+)
+
+Digits: 147 - Total: 12
+Array
+(
+    [msg] => Gather End
+    [Called] => +17147108286
+    [Digits] => 147
+    [ToState] => CA
+    [CallerCountry] => US
+    [Direction] => inbound
+    [CallerState] => CA
+    [ToZip] => 92856
+    [CallSid] => CAcbd159bf0ece8fa92eb92fb3cd7dabf4
+    [To] => +17147108286
+    [CallerZip] => 92841
+    [ToCountry] => US
+    [ApiVersion] => 2010-04-01
+    [CalledZip] => 92856
+    [CalledCity] => ALISO VIEJO
+    [CallStatus] => in-progress
+    [From] => +17149022817
+    [AccountSid] => AC4205285ed733b1bde6fd80b1230f8dfa
+    [CalledCountry] => US
+    [CallerCity] => IRVINE
+    [Caller] => +17149022817
+    [FromCountry] => US
+    [ToCity] => ALISO VIEJO
+    [FromCity] => IRVINE
+    [CalledState] => CA
+    [FromZip] => 92841
+    [FromState] => CA
+)
+
+Digits: 258 - Total: 15
+Array
+(
+    [msg] => Gather End
+    [Called] => +17147108286
+    [Digits] => 258
+    [ToState] => CA
+    [CallerCountry] => US
+    [Direction] => inbound
+    [CallerState] => CA
+    [ToZip] => 92856
+    [CallSid] => CA3eab6af60cc801163b25bc0fd3289d2a
+    [To] => +17147108286
+    [CallerZip] => 92832
+    [ToCountry] => US
+    [ApiVersion] => 2010-04-01
+    [CalledZip] => 92856
+    [CalledCity] => ALISO VIEJO
+    [CallStatus] => in-progress
+    [From] => +17142613167
+    [AccountSid] => AC4205285ed733b1bde6fd80b1230f8dfa
+    [CalledCountry] => US
+    [CallerCity] => YORBA LINDA
+    [Caller] => +17142613167
+    [FromCountry] => US
+    [ToCity] => ALISO VIEJO
+    [FromCity] => YORBA LINDA
+    [CalledState] => CA
+    [FromZip] => 92832
+    [FromState] => CA
+)
+
+Digits: 123 - Total: 6
+Digits: 123 - Total: 6
+Digits: 123 - Total: 6
+Array
+(
+    [Digits] => 123
+)
+
+Digits: 123 - Total: 6
+Digits: 123 - Total: 6
+Digits: 123 - Total: 6
+Array
+(
+    [Digits] => 123
+)
+
+Digits: 147 - Total: 12
+Array
+(
+    [msg] => Gather End
+    [Called] => +17147108286
+    [Digits] => 147
+    [ToState] => CA
+    [CallerCountry] => US
+    [Direction] => inbound
+    [CallerState] => CA
+    [ToZip] => 92856
+    [CallSid] => CAcbd159bf0ece8fa92eb92fb3cd7dabf4
+    [To] => +17147108286
+    [CallerZip] => 92841
+    [ToCountry] => US
+    [ApiVersion] => 2010-04-01
+    [CalledZip] => 92856
+    [CalledCity] => ALISO VIEJO
+    [CallStatus] => in-progress
+    [From] => +17149022817
+    [AccountSid] => AC4205285ed733b1bde6fd80b1230f8dfa
+    [CalledCountry] => US
+    [CallerCity] => IRVINE
+    [Caller] => +17149022817
+    [FromCountry] => US
+    [ToCity] => ALISO VIEJO
+    [FromCity] => IRVINE
+    [CalledState] => CA
+    [FromZip] => 92841
+    [FromState] => CA
+)
+
+Digits: 123 - Total: 6
+Digits: 123 - Total: 6
+Digits: 123 - Total: 6
+Array
+(
+    [Digits] => 123
+)
+
+Digits: 123 - Total: 6
+Digits: 123 - Total: 6
+Digits: 123 - Total: 6
+Array
+(
+    [Digits] => 123
+)
+
+Digits: 147 - Total: 12
+Array
+(
+    [msg] => Gather End
+    [Called] => +17147108286
+    [Digits] => 147
+    [ToState] => CA
+    [CallerCountry] => US
+    [Direction] => inbound
+    [CallerState] => CA
+    [ToZip] => 92856
+    [CallSid] => CAcbd159bf0ece8fa92eb92fb3cd7dabf4
+    [To] => +17147108286
+    [CallerZip] => 92841
+    [ToCountry] => US
+    [ApiVersion] => 2010-04-01
+    [CalledZip] => 92856
+    [CalledCity] => ALISO VIEJO
+    [CallStatus] => in-progress
+    [From] => +17149022817
+    [AccountSid] => AC4205285ed733b1bde6fd80b1230f8dfa
+    [CalledCountry] => US
+    [CallerCity] => IRVINE
+    [Caller] => +17149022817
+    [FromCountry] => US
+    [ToCity] => ALISO VIEJO
+    [FromCity] => IRVINE
+    [CalledState] => CA
+    [FromZip] => 92841
+    [FromState] => CA
+)
+
+Digits: 258 - Total: 15
+Array
+(
+    [msg] => Gather End
+    [Called] => +17147108286
+    [Digits] => 258
+    [ToState] => CA
+    [CallerCountry] => US
+    [Direction] => inbound
+    [CallerState] => CA
+    [ToZip] => 92856
+    [CallSid] => CA3eab6af60cc801163b25bc0fd3289d2a
+    [To] => +17147108286
+    [CallerZip] => 92832
+    [ToCountry] => US
+    [ApiVersion] => 2010-04-01
+    [CalledZip] => 92856
+    [CalledCity] => ALISO VIEJO
+    [CallStatus] => in-progress
+    [From] => +17142613167
+    [AccountSid] => AC4205285ed733b1bde6fd80b1230f8dfa
+    [CalledCountry] => US
+    [CallerCity] => YORBA LINDA
+    [Caller] => +17142613167
+    [FromCountry] => US
+    [ToCity] => ALISO VIEJO
+    [FromCity] => YORBA LINDA
+    [CalledState] => CA
+    [FromZip] => 92832
+    [FromState] => CA
+)
+
+Digits: 123 - Total: 6
+Array
+(
+    [msg] => Gather End
+    [Called] => +17147108286
+    [Digits] => 123
+    [ToState] => CA
+    [CallerCountry] => US
+    [Direction] => inbound
+    [CallerState] => CA
+    [ToZip] => 92856
+    [CallSid] => CA4af301b20c9d3d483c54a1a40716aa22
+    [To] => +17147108286
+    [CallerZip] => 92802
+    [ToCountry] => US
+    [ApiVersion] => 2010-04-01
+    [CalledZip] => 92856
+    [CalledCity] => ALISO VIEJO
+    [CallStatus] => in-progress
+    [From] => +17148555283
+    [AccountSid] => AC4205285ed733b1bde6fd80b1230f8dfa
+    [CalledCountry] => US
+    [CallerCity] => ANAHEIM
+    [Caller] => +17148555283
+    [FromCountry] => US
+    [ToCity] => ALISO VIEJO
+    [FromCity] => ANAHEIM
+    [CalledState] => CA
+    [FromZip] => 92802
+    [FromState] => CA
+)
+
