@@ -7,6 +7,7 @@
     // make an associative array of callers we know, indexed by phone number
     $people = array(
         "+17148555283"=>"Quan Luu",
+        "+17149022817"=>"Yen Tran",
         "+17142613167"=>"Chi Lieu"
     );
 
@@ -21,6 +22,9 @@ include("MySql.php");
     $json_data = json_encode($_REQUEST);
 
     $db = new MySql();
+
+    $queryInsert = "INSERT INTO tracking (callid, digits) VALUES ('{$from}', '{$digits}')";
+    $insert = $db->insert($queryInsert);
 
 /*
     $query = "SELECT * FROM TABLE WHERE 1";

@@ -8,7 +8,7 @@ class MySql {
 
     protected $host     = "localhost";
     protected $user     = "root";
-    protected $pass     = "hoangyen";
+    protected $pass     = "root";
     protected $dbName   = "incoming";
 
     protected $error;
