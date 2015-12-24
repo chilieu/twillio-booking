@@ -12,9 +12,9 @@
 
 include("MySql.php");
 
-    $digits = empty($_REQUEST['Digits']) : "" : $_REQUEST['Digits'];
+    $digits = empty($_REQUEST['Digits']) ? "" : $_REQUEST['Digits'];
 
-    $from = empty($_REQUEST['From']) : "" : $_REQUEST['From'];
+    $from = empty($_REQUEST['From']) ? "" : $_REQUEST['From'];
 
     $name = $people[$from];
 
