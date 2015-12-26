@@ -54,6 +54,7 @@ class Index extends Incoming_Controller
 	public function booking()
 	{
 		//booking confirmation
+		$booking = array();
 		if( $this->incoming_data['Digits'] == '2' ) redirect("/incoming/index/confirmation/");
 		if( $this->incoming_data['Digits'] == '*' ) redirect("/incoming/index/");
 
@@ -62,7 +63,6 @@ class Index extends Incoming_Controller
 		switch ( $step ) {
 
 			case 'booking-room':
-				$booking = array();
 				$booking['callid'] = $this->incoming_data['From'];
 
 				$steps = array(
@@ -120,7 +120,7 @@ class Index extends Incoming_Controller
 				redirect("/incoming/index/index/");
 			break;
 		}
-			$this->viewData['_body'] = $this->load->view( $this->APP . '/' . $step, array(), true);
+			$this->viewData['_body'] = $this->load->view( $this->APP . '/' . $step, array('booking' =>$booking), true);
 			$this->render( $this->layout );
 
 
