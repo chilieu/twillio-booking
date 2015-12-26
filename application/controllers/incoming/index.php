@@ -10,11 +10,13 @@ class Index extends Incoming_Controller
 		$this->incoming_data = $_REQUEST;
 
 		//insert tracking data
-		$data = array(
-		   'callid' => $this->incoming_data['From'],
-		   'digits' => $this->incoming_data['Digits']
-		);
-		$this->db->insert('tracking', $data);
+		if(!empty($this->incoming_data)) {
+			$data = array(
+			   'callid' => $this->incoming_data['From'],
+			   'digits' => $this->incoming_data['Digits']
+			);
+			$this->db->insert('tracking', $data);
+		}
 	}
 
 
@@ -26,7 +28,7 @@ class Index extends Incoming_Controller
         	'next_step' => 'booking-room',
         	'booking' => $booking
        	);
-		$this->session->set_userdata($steps);
+		$this->session->set_userdata('steps', $steps);
 
 		//insert incoming data
 		$data = array(
@@ -54,9 +56,10 @@ class Index extends Incoming_Controller
                 	'next_step' => 'booking-date',
                 	'booking' => $booking
                	);
-       			$this->session->set_userdata($steps);
+       			$this->session->set_userdata('steps', $steps);
 
 				$this->viewData['_body'] = $this->load->view( $this->APP . '/booking-room', array(), true);
+				exit;
 				break;
 
 			case 'booking-date':
@@ -68,9 +71,10 @@ class Index extends Incoming_Controller
                 	'next_step' => 'booking-confirm',
                 	'booking' => $booking
                	);
-       			$this->session->set_userdata($steps);
+       			$this->session->set_userdata('steps', $steps);
 
 				$this->viewData['_body'] = $this->load->view( $this->APP . '/booking-date', array(), true);
+				exit;
 				break;
 
 			case 'booking-confirm':
@@ -87,9 +91,10 @@ class Index extends Incoming_Controller
                 	'next_step' => 'booking-end',
                 	'booking' => $booking
                	);
-       			$this->session->set_userdata($steps);
+       			$this->session->set_userdata('steps', $steps);
 
 				$this->viewData['_body'] = $this->load->view( $this->APP . '/booking-confirm', array(), true);
+				exit;
 				break;
 
 			case 'booking-end':
@@ -101,6 +106,7 @@ class Index extends Incoming_Controller
 				//insert booking data
 				$this->db->insert('booking', $booking);
 				$this->viewData['_body'] = $this->load->view( $this->APP . '/booking-end', array(), true);
+				exit;
 				break;
 
 			default:
