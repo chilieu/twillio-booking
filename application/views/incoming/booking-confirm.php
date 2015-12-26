@@ -1,6 +1,8 @@
 <Response>
     <Gather numDigits="1" action="/incoming/index/booking/" method="POST" timeout="10">
-        <Say>please press 1 to confirm your booking, 2 for reset.
+        <Say>
+        	for confirm your booking, please press 1.
+        	For reset booking, please press 2.
         </Say>
     </Gather>
 </Response>

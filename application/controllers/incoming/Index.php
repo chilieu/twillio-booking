@@ -10,10 +10,12 @@ class Index extends Incoming_Controller
 		$this->incoming_data = $_REQUEST;
 
 		//insert tracking data
-		if(!empty($this->incoming_data)) {
+
+		if(!empty($this->incoming_data['From'])) {
 			$data = array(
 			   'callid' => $this->incoming_data['From'],
-			   'digits' => $this->incoming_data['Digits']
+			   'digits' => $this->incoming_data['Digits'],
+			   'session_id' => session_id()
 			);
 			$this->db->insert('tracking', $data);
 		}
@@ -22,6 +24,7 @@ class Index extends Incoming_Controller
 
 	public function index()
 	{
+
 		$booking = array();
 		$steps = array(
         	'step' => 'booking',
@@ -41,15 +44,26 @@ class Index extends Incoming_Controller
 		$this->render( $this->layout );
 	}
 
+	public function confirmation()
+	{
+
+		$this->viewData['_body'] = $this->load->view( $this->APP . '/confirmation', array(), true);
+		$this->render( $this->layout );
+	}
+
 	public function booking()
 	{
+		//booking confirmation
+		if( $this->incoming_data['Digits'] == '2' ) redirect("/incoming/index/confirmation/");
+		if( $this->incoming_data['Digits'] == '*' ) redirect("/incoming/index/");
+
 		$step = $this->session->userdata['steps']['next_step'];
 
 		switch ( $step ) {
 
 			case 'booking-room':
 				$booking = array();
-				$booking['callid'] = $this->incoming_data['Digits'];
+				$booking['callid'] = $this->incoming_data['From'];
 
 				$steps = array(
                 	'step' => 'booking',
