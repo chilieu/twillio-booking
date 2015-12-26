@@ -55,8 +55,15 @@ class Index extends Incoming_Controller
 	{
 		//booking confirmation
 		$booking = array();
-		if( $this->incoming_data['Digits'] == '2' ) redirect("/incoming/index/confirmation/");
-		if( $this->incoming_data['Digits'] == '*' ) redirect("/incoming/index/");
+
+		if( $this->incoming_data['Digits'] == '2' ) {
+			header("Location: /incoming/index/confirmation/");
+			exit;
+		}
+		if( $this->incoming_data['Digits'] == '*' ) {
+			header("Location: /incoming/index/");
+			exit;
+		}
 
 		$step = $this->session->userdata['steps']['next_step'];
 
@@ -106,9 +113,6 @@ class Index extends Incoming_Controller
 				break;
 
 			case 'booking-end':
-
-				//if reset
-				if( $this->incoming_data['Digits'] == '2' ) redirect("/incoming/index/index/");
 
 				$booking = $this->session->userdata['steps']['booking'];
 				//insert booking data

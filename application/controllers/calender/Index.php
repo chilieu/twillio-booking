@@ -53,7 +53,7 @@ class Index extends Calender_Controller
 				$r->day,
 				$r->time,
 				$r->period,
-				date("F j, Y, g:i a", $r->creation_date)
+				date("F j, Y, g:i a", $r->book_timestamp)
 			);
 		}
 
