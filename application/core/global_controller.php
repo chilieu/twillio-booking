@@ -31,7 +31,7 @@ class Global_Controller extends CI_Controller
 
 		$this->_theme = $theme;
 
-		$this->load->helper('Util');
+		//$this->load->helper('Util');
 
 		$this->_uri = strtolower(strtok($_SERVER['REQUEST_URI'], '?'));
 		$this->_uriArr = explode('/', trim($this->_uri, '/'));
