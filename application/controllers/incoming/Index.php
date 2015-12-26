@@ -58,8 +58,6 @@ class Index extends Incoming_Controller
                	);
        			$this->session->set_userdata('steps', $steps);
 
-				$this->viewData['_body'] = $this->load->view( $this->APP . '/booking-room', array(), true);
-				exit;
 				break;
 
 			case 'booking-date':
@@ -73,8 +71,6 @@ class Index extends Incoming_Controller
                	);
        			$this->session->set_userdata('steps', $steps);
 
-				$this->viewData['_body'] = $this->load->view( $this->APP . '/booking-date', array(), true);
-				exit;
 				break;
 
 			case 'booking-confirm':
@@ -93,8 +89,6 @@ class Index extends Incoming_Controller
                	);
        			$this->session->set_userdata('steps', $steps);
 
-				$this->viewData['_body'] = $this->load->view( $this->APP . '/booking-confirm', array(), true);
-				exit;
 				break;
 
 			case 'booking-end':
@@ -105,8 +99,6 @@ class Index extends Incoming_Controller
 				$booking = $this->session->userdata['steps']['booking'];
 				//insert booking data
 				$this->db->insert('booking', $booking);
-				$this->viewData['_body'] = $this->load->view( $this->APP . '/booking-end', array(), true);
-				exit;
 				break;
 
 			default:
@@ -114,6 +106,8 @@ class Index extends Incoming_Controller
 				redirect("/incoming/index/index/");
 			break;
 		}
+			$this->viewData['_body'] = $this->load->view( $this->APP . '/' . $step, array(), true);
+			$this->render( $this->layout );
 
 
 	}
