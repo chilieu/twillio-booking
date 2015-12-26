@@ -502,3 +502,11 @@ $config['rewrite_short_tags'] = FALSE;
 | Array:		array('10.0.1.200', '192.168.5.0/24')
 */
 $config['proxy_ips'] = '';
+
+function __autoload($class) {
+	if (file_exists(APPPATH . 'core/' . strtolower($class) . EXT)) {
+		include_once APPPATH . 'core/' . strtolower($class) . EXT;
+	} else if (file_exists(APPPATH . 'models/' . strtolower($class) . EXT)) {
+		include_once APPPATH . 'models/' . strtolower($class) . EXT;
+	}
+}
